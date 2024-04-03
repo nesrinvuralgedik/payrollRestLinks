@@ -14,6 +14,9 @@ It is built with Maven and includes the following dependencies:
 A simple payroll service that manages the employees of a company. It stores employee objects in a (H2 in-memory) database and accesses them via JPA.
 Then it uses the Spring MVC as a web layer.
 
+Order fulfillment service is added to manage state changes without triggering breaking changes in clients. 
+Instead of clients parsing the payload, links are given to signal valid actions. 
+
 ## Usage
 Once the application is running, you can use the following endpoints to interact with the user data:
 
