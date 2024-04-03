@@ -44,6 +44,7 @@ class OrderController {
         return assembler.toModel(order);
     }
 
+    @PostMapping("/orders")
     ResponseEntity<EntityModel<Order>> newOrder(@RequestBody Order order){
 
         order.setStatus(Status.IN_PROGRESS);
